@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>First Javascript Assignment</title>
+
+</head>
+<body>
+<p id="first"></p>
+<p id="second"></p>
+<script >
+    var d = new Date();
+    day=["Sunday","Monday","Tuesday","Wednesday", "Thursday", "Friday", "Saturday"];
+    document.getElementById("first").innerHTML="Today is : "+day[d.getDay()];
+
+    var format= d.getHours();
+    if(format > 12)
+    {
+        format = d.getHours()-12;
+    }
+    var value=d.getHours() >=12 ?'PM':'AM';
+    document.getElementById("second").innerHTML="Current time is : "+format+ " "+value+" : " +d.getMinutes()+":"+d.getSeconds(); 
+</script>
+</body>
+</html>
