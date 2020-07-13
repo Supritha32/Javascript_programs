@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Third Javascript Assignment</title>
+
+</head>
+<body>
+<p id="first"></p>
+<p id="second"></p>
+<script>
+    
+    var d=new Date();
+    var month=d.getMonth();
+    if(month<=10)
+    {
+        month= '0'+month;
+    }
+    var date=d.getDate();
+    if(date<=10)
+    {
+        date= '0'+date;
+    }
+    document.getElementById("first").innerHTML="Today's day is : "+month+"-"+date+"-"+d.getFullYear();
+    document.getElementById("second").innerHTML="Today's day is : "+month+"/"+date+"/"+d.getFullYear();
+     </script>
+
+</body>
+</html>
